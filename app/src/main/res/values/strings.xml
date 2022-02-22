@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">testfaileds3</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_homepage">Homepage</string>
+<string name="lbl_recent">Recent</string>
+<string name="msg_iphone_13_pro_m">iPhone 13 Pro Max - 1</string>
+<string name="msg_check_your_app">"Check your app's UI from the below demo screens of your app."</string>
+<string name="lbl_app_navigation">App Navigation</string>
+<string name="lbl_popular">Popular</string>
+<string name="lbl_dhiwise">Dhiwise</string>
+<string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
+</resources>

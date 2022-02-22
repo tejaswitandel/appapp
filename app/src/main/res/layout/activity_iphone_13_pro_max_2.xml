@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone13ProMax2VM" type="com.testfaileds.app.modules.iphone13promax2.data.viewmodel.Iphone13ProMax2VM"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup13"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintFrame11"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+                <ImageView android:id="@+id/imageMenu"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_width="@dimen/_24pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_menu"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageAvatar"
+                    app:layout_constraintEnd_toStartOf="@+id/txtDhiwise"
+                    app:layout_constraintHorizontal_bias="0.1"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/imageAvatar"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtDhiwise"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_116pxh"
+                    android:layout_marginStart="@dimen/_116pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{iphone13ProMax2VM.iphone13ProMax2Model.txtDhiwise}"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageAvatar"
+                    app:layout_constraintEnd_toStartOf="@+id/imageAvatar"
+                    app:layout_constraintHorizontal_bias="0.37"
+                    app:layout_constraintStart_toEndOf="@+id/imageMenu"
+                    app:layout_constraintTop_toTopOf="@+id/imageAvatar"
+                    style="@style/txtRobotoregular16" tools:text="@string/lbl_dhiwise"/>
+                <ImageView android:id="@+id/imageAvatar"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_avatar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.69"
+                    app:layout_constraintStart_toEndOf="@+id/txtDhiwise" app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <View android:background="@color/gray_300"
+            android:id="@+id/lineDivider"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_width="@dimen/_428pxh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/tabLayoutGroup4"/>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutGroup4"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_60pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_39pxv"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/lineDivider"
+            app:layout_constraintStart_toStartOf="@+id/lineDivider"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarToolbar"
+            app:tabIndicatorColor="@color/light_blue_900"
+            app:tabIndicatorHeight="@dimen/_2pxv" app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/light_blue_900" app:tabTextColor="@color/gray_500"/>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerGroup9"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_48pxv"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/tabLayoutGroup4"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
